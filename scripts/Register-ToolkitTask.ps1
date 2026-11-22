@@ -62,5 +62,6 @@ try {
 }
 catch {
     Write-Host "Task registration failed: $($_.Exception.Message)" -ForegroundColor Red
-    exit 1
+    throw
 }
+

@@ -88,4 +88,6 @@ END OF REPORT
 catch {
     Write-Host "An error occurred while collecting system information." -ForegroundColor Red
     Write-Host $_.Exception.Message -ForegroundColor Red
+
+    throw
 }

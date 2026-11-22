@@ -90,4 +90,6 @@ catch {
     $ErrorMessage = "$(Get-Date): $($_.Exception.Message)"
     Add-Content -Path $LogPath -Value $ErrorMessage
     Write-Host "Disk monitoring failed: $($_.Exception.Message)" -ForegroundColor Red
+
+    throw
 }

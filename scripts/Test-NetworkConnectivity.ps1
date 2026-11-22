@@ -165,4 +165,6 @@ catch {
     Write-DiagnosticLog "ERROR: $($_.Exception.Message)"
 
     Write-Host "Network diagnostics failed: $($_.Exception.Message)" -ForegroundColor Red
+
+    throw
 }

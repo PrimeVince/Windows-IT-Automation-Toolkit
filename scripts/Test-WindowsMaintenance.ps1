@@ -183,4 +183,6 @@ catch {
     Add-Content -Path $LogPath -Value $ErrorMessage
 
     Write-Host "Maintenance checks failed: $($_.Exception.Message)" -ForegroundColor Red
+
+    throw
 }
