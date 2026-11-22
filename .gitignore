@@ -1,0 +1,12 @@
+# Generated reports
+reports/*.txt
+
+# Generated logs
+logs/*.log
+
+# Temporary files
+*.tmp
+*.bak
+
+# Editor settings
+.vscode/
